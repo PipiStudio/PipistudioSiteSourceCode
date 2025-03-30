@@ -1,0 +1,7 @@
+body{
+    background-image: url('./background.jpg');
+    background-size: cover; /* 图片覆盖整个屏幕 */
+    background-position: center; /* 图片居中显示 */
+    background-repeat: no-repeat; /* 禁止重复 */
+    background-attachment: fixed;
+}
