@@ -1,31 +1,55 @@
-body{
-    background-image: url('./background.jpg');
-    background-size: cover; /* 图片覆盖整个屏幕 */
-    background-position: center; /* 图片居中显示 */
-    background-repeat: no-repeat; /* 禁止重复 */
+:root
+{
+    --background-image: url('./background.jpg');
+    --background: transparent;
+}
+
+html.light
+{
+    --background: #ffffff;
+    --background-image: none;
+}
+
+html.dark {
+  --background: transparent; 
+  --background-image: url('./background.jpg'); 
+}
+
+body {
+    background-color: var(--background);
+    background-image: var(--background-image);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     background-attachment: fixed;
 }
-.el-row {
-    margin-bottom: 20px;
-  }
-.el-row:last-child {
-    margin-bottom: 0;
-}
-  
-  
+
+
 html.dark .el-menu {
     background-color: #1f1f1f;
     color: #ffffff;
 }
-  
+
 html.dark .el-menu-item {
     color: #ffffff;
 }
-  
+
 html.dark .el-menu-item:hover {
     background-color: #333;
 }
-  
+
 html.dark .el-menu-item.is-active {
     background-color: #007bff;
+}
+
+.fade-enter-active {
+    transition: opacity 2s ease-in-out;
+}
+
+.fade-enter-from {
+    opacity: 0;
+}
+
+.fade-enter-to {
+    opacity: 1;
 }
