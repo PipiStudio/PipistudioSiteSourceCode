@@ -42,6 +42,30 @@ html.dark .el-menu-item.is-active {
     background-color: #007bff;
 }
 
+html.dark .el-carousel__item h1 {
+    display: flex;
+    color: #ffffff;
+    opacity: 0.75;
+    line-height: 300px;
+    margin: 0;
+  }
+
+html.light .el-carousel__item h1 {
+    display: flex;
+    color: #272727;
+    opacity: 0.75;
+    line-height: 300px;
+    margin: 0;
+  }
+
+html.dark .el-carousel__item {
+    background-color: #000000a1;
+  }
+  
+html.light .el-carousel__item {
+    background-color: #09a5ff;
+  }
+
 .fade-enter-active {
     transition: opacity 2s ease-in-out;
 }
@@ -53,3 +77,10 @@ html.dark .el-menu-item.is-active {
 .fade-enter-to {
     opacity: 1;
 }
+
+.el-row {
+    margin-bottom: 20px;
+  }
+  .el-row:last-child {
+    margin-bottom: 0;
+  }
