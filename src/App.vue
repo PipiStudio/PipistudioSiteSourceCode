@@ -22,7 +22,7 @@ const toggleDark = useToggle(isDark)
           <el-menu-item index="1">
             <el-icon size="30">
               <RouterLink to="/">
-                <Sunrise />
+                <img class="icon" src="./assets/icon_plain.svg" alt="SVG Image" width="30" height="30">
               </RouterLink>
             </el-icon>
           </el-menu-item>
